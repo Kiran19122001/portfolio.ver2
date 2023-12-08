@@ -1,0 +1,121 @@
+.image-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a6f0f0;
+}
+.contact-me {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 100px 30px 100px 30px;
+  color: #ffffff;
+  background-color: #00001a;
+  height: 100%;
+}
+.each-cont {
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 5px 30px;
+}
+.cont-me {
+  height: 99px;
+  width: 50px;
+  color: blue;
+}
+.through-cn {
+  color: coral;
+}
+.platform-cnt {
+  padding-left: 30px;
+}
+
+.address-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 370px;
+}
+.address {
+  padding-left: 10px;
+}
+.address-div p {
+  padding-left: 15px;
+}
+.email-sp {
+  padding-left: 10px;
+}
+.start-btn {
+  border: 1px solid #00ffff;
+  padding: 5px;
+  height: 30px;
+  width: 100px;
+  background-color: #00ffff;
+  color: #00001a;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.start-btn:hover {
+  transform: scale(1.1);
+}
+.start-btn a {
+  text-decoration: none;
+  color: #00001a;
+  font-weight: 600;
+}
+@media screen and (max-width: 576px) {
+  .contact-me {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 100px 30px 100px 30px;
+    color: #ffffff;
+    background-color: #00001a;
+    height: 100%;
+  }
+  .each-cont {
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 30px;
+    margin-top: 30px;
+  }
+  .cont-me {
+    height: 50px;
+    width: 30px;
+    color: blue;
+  }
+  .through-cn {
+    font-size: 15px;
+  }
+
+  .address-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .address-div p {
+    padding-left: 50px;
+  }
+  .address {
+    text-align: center;
+  }
+
+  .line {
+    padding-left: 10px;
+  }
+}

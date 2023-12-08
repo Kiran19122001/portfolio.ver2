@@ -1,0 +1,192 @@
+.cat-cont-pr {
+  position: relative;
+}
+
+.header-main-containr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  color: whitesmoke;
+  height: 80px;
+  transition: transform 0.3s ease;
+  position: fixed;
+  z-index: 1001;
+}
+
+.header-main-containr:hover {
+  background: #212329;
+}
+
+.logo-name {
+  padding-left: 50px;
+}
+
+.logo-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.components {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  padding-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.line-effect:hover {
+  border-bottom: 3px solid blue;
+  padding-bottom: 3px;
+}
+
+
+
+@media screen and (min-width: 426px) {
+  .header-main-containr {
+    height: 80px;
+
+  }
+
+  .mobile-div {
+    display: none;
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .laptop-div {
+    display: block;
+  }
+}
+
+.list-header-items {
+  list-style: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.hearder-items-a {
+  text-decoration: none;
+}
+
+.porfolio-head {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.porfolio-head:hover {
+  border-bottom: 2px solid blue;
+  padding-bottom: 3px;
+}
+
+.headers-line:hover {
+  border-bottom: 2px solid blue;
+  padding-bottom: 3px;
+}
+
+/* Resposive header */
+@media screen and (max-width: 425px) {
+
+  /* Mobile Styles */
+  .mobile-div {
+    display: block;
+    padding-right: 10px;
+  }
+
+  .laptop-div {
+    display: none;
+  }
+
+  /* Mobile Styles */
+  /* ... (other styles remain unchanged) */
+
+  .components {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 10px;
+    background-color: #fff;
+    width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adding a subtle box-shadow */
+  }
+
+  .headers-line {
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 1px;
+    /* Reduced the letter spacing for better readability */
+    font-weight: 500;
+    /* Adjusted font-weight */
+    text-decoration: none;
+    /* Removed underline from links */
+    transition: color 0.3s ease-in-out;
+    /* Smooth color transition on hover */
+  }
+
+  .headers-line:hover {
+    color: blue;
+    /* Changed text color on hover */
+  }
+
+  .menu-btn-ct {
+    border-radius: 5px;
+    border: none;
+    margin-right: 100px;
+  }
+
+  .menu-btn {
+    color: coral;
+    font-size: 28px;
+    /* Reduced the button size */
+    padding: 10px;
+    /* Adjusted padding */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    /* Added cursor pointer */
+  }
+
+  .list-header-items {
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%;
+    /* Set li width to 100% */
+    border: 1px solid #ccc;
+    /* Add a border for visual distinction */
+    border-radius: 8px;
+    /* Apply border-radius */
+    padding: 12px;
+    /* Adjust padding for better spacing */
+    box-sizing: border-box;
+    cursor: pointer;
+    text-transform: capitalize;
+    /* Include padding in width calculation */
+  }
+
+  /* Added hover effect for navigation items */
+  .list-header-items:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Adjusted margin for navigation links */
+  .nav-link {
+    margin-top: 5px;
+  }
+}

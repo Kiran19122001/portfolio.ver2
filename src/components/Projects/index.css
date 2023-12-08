@@ -1,0 +1,174 @@
+/* Styling for tags */
+.course-details ul,
+.project-details ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-details ul li,
+.project-details ul li {
+  margin: 5px;
+  padding: 5px 12px;
+  background: #f8a5c2;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Hover effect for tags */
+.course-details ul li:hover,
+.project-details ul li:hover {
+  background: #e0667d;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.projects-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-content {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.left-timeline {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.right-timeline {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 30px;
+  position: relative;
+  z-index: 1000;
+}
+
+.projects-head {
+  color: coral;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #000;
+}
+
+.control-image {
+  height: 300px;
+  width: 350px;
+}
+
+.card-title-cp {
+  color: blue;
+}
+
+.duration-in-days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80px;
+  align-self: center;
+}
+
+.days-icon {
+  color: rgb(122, 15, 204);
+}
+
+.list-techs-div {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list-skills {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 48px;
+  width: 30%;
+  background-color: black;
+  color: white;
+  margin: 5px;
+  text-align: center !important;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  padding: 5px;
+}
+
+.list-skills:hover {
+  color: black;
+  font-weight: 600;
+  background-color: skyblue;
+  transform: scale(1.1);
+}
+
+.visit-button {
+  background: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.visit-button:hover {
+  background-color: skyblue;
+  transform: scale(1.1);
+}
+
+.visit-button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 425px) {
+  .control-image {
+    height: 200px;
+    width: 250px;
+  }
+
+  .list-techs-div {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .list-skills {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 70px;
+    width: 45%;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    text-align: center !important;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .virtical-timelinecmp {
+    width: 80%;
+  }
+
+  .project-container {
+    padding-left: 130px;
+  }
+}
