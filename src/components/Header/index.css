@@ -52,25 +52,7 @@
 
 
 
-@media screen and (min-width: 426px) {
-  .header-main-containr {
-    height: 80px;
 
-  }
-
-  .mobile-div {
-    display: none;
-    height: 100%;
-    width: 100%;
-
-    position: fixed;
-    z-index: 1000;
-  }
-
-  .laptop-div {
-    display: block;
-  }
-}
 
 .list-header-items {
   list-style: none;
@@ -98,7 +80,7 @@
 }
 
 /* Resposive header */
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 300px) and (max-width:500px) {
 
   /* Mobile Styles */
   .mobile-div {
@@ -188,5 +170,11 @@
   /* Adjusted margin for navigation links */
   .nav-link {
     margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .mobile-div {
+    display: none;
   }
 }

@@ -289,11 +289,11 @@ const skillsList = [
   { id: 9, name: "BOOTSTRAP", catgory: "odd" },
   { id: 6, name: "JAVASCRIPT", catgory: "even" },
   { id: 5, name: "REACT JS", catgory: "prime" },
-  { id: 1, name: "REACT-REDUX", catgory: "odd" },
+  { id: 1, name: "REDUX", catgory: "odd" },
   { id: 7, name: "NODE JS", catgory: "prime" },
   { id: 8, name: "EXPRESS JS", catgory: "even" },
   { id: 3, name: "JAVA", catgory: "prime" },
-  { id: 10, name: "PYTHON", catgory: "even" },
+  { id: 10, name: "MONGODB", catgory: "even" },
   { id: 11, name: "MYSQL", catgory: "prime" },
   { id: 12, name: "SQLITE", catgory: "even" },
 ];
@@ -325,6 +325,11 @@ const Home = () => {
       return "65%";
     }
   };
+  const onFormSubmit = () => {
+    const mailtoUrl = "mailto:kiranban0011@gmail.com";
+
+    window.location.href = mailtoUrl;
+  };
 
   return (
     <>
@@ -333,9 +338,9 @@ const Home = () => {
         <div className="main-container" id="home">
           <div className="home-content">
             <h1 className="name">Hi, i'm Kiran Bandla</h1>
-            <p className="sw-role">Front-End Developer</p>
+            <p className="sw-role">Web Developer</p>
             <p className="jd-desc">
-              I am a dedicated and passionate aspiring front end developer on a
+              I am a dedicated and passionate aspiring web developer on a
               journey to transform my love for coding into a fulfilling career.
               With a solid foundation in programming languages and a keen eye
               for problem-solving, I'm committed to crafting efficient and
@@ -489,7 +494,7 @@ const Home = () => {
           <h1 className="c-h-c" id="cont">
             Contact Me
           </h1>
-          <form action="#" method="post" className="contact-form">
+          <form method="post" className="contact-form" onSubmit={onFormSubmit}>
             <div className="form-group">
               <label htmlFor="name" className="labels-c-t">
                 Name:

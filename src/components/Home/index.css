@@ -146,14 +146,32 @@ footer {
 .image-container-cm {
   margin-top: 200px;
   margin-left: 200px;
-  position: fixed;
-  right: 50px;
+  position: absolute;
+  right: 100px;
   z-index: 0;
 }
 
-@media screen and (max-width: 759px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .image-container-cm {
+    z-index: -1;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
   .image-container-cm {
     display: none;
+  }
+
+  .home-content {
+    padding-left: 60px;
+  }
+
+  .skill-list {
+    padding-left: 0px !important;
+
+    min-width: 500px !important;
+    padding-right: 50px;
   }
 }
 
@@ -164,7 +182,7 @@ footer {
   box-shadow: 0 0 100px 50px rgba(0, 0, 255, 0.8);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 300px) and (max-width:500px) {
   .entry-container {
     /* background-image: url('./mobpic.jpg');
     background-size: cover; */
@@ -238,7 +256,7 @@ footer {
 }
 
 .skills-container-nv {
-  padding: 30px 1px 70px 50px;
+  padding: 10px 0px;
 
 }
 
@@ -310,9 +328,10 @@ footer {
 
 .head-skill-n {
   color: coral;
-  padding-top: 50px;
+  padding: 10px 0px;
   width: 100%;
   text-align: center;
+  background-color: #000000;
 
 }
 
