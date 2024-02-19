@@ -13,6 +13,7 @@
   transition: transform 0.3s ease;
   position: fixed;
   z-index: 1001;
+
 }
 
 .header-main-containr:hover {
@@ -81,6 +82,9 @@
 
 /* Resposive header */
 @media screen and (min-width: 300px) and (max-width:500px) {
+  .logo-name {
+    padding-left: 10px;
+  }
 
   /* Mobile Styles */
   .mobile-div {
@@ -94,6 +98,9 @@
 
   /* Mobile Styles */
   /* ... (other styles remain unchanged) */
+  .header-main-containr {
+    width: 100vw;
+  }
 
   .components {
     display: flex;
@@ -102,11 +109,13 @@
     align-items: flex-start;
     margin-top: 10px;
     background-color: #fff;
-    width: 100%;
+    width: 80vw;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Adding a subtle box-shadow */
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 
   .headers-line {
@@ -130,7 +139,7 @@
   .menu-btn-ct {
     border-radius: 5px;
     border: none;
-    margin-right: 100px;
+
   }
 
   .menu-btn {

@@ -18,6 +18,7 @@ import myProfile from "../About/myProfile.jpeg";
 import "./index.css";
 import "../Projects/index.css";
 import "../About/index.css";
+import "../Contact/index.css";
 
 const timelineItemsList = [
   {
@@ -491,7 +492,7 @@ const Home = () => {
           </div>
         </div>
         <div className="contact-container-a" id="contact ">
-          <h1 className="c-h-c" id="cont">
+          <h1 className="projects-head" id="cont">
             Contact Me
           </h1>
           <form method="post" className="contact-form" onSubmit={onFormSubmit}>
@@ -505,6 +506,7 @@ const Home = () => {
                 name="name"
                 required
                 className="inputs-c-t"
+                placeholder="Enter name"
               />
             </div>
             <div className="form-group">
@@ -517,6 +519,7 @@ const Home = () => {
                 name="email"
                 required
                 className="inputs-c-t"
+                placeholder="Enter email address"
               />
             </div>
             <div className="form-group mes">
@@ -526,7 +529,6 @@ const Home = () => {
               <textarea
                 id="message"
                 name="message"
-                required
                 className="meassege-c-t"
               ></textarea>
             </div>

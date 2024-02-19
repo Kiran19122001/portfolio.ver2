@@ -57,10 +57,9 @@
 
 .projects-head {
   color: coral;
-  width: 100%;
   text-align: center;
   padding-bottom: 20px;
-  width: 100%;
+  width: auto;
   background-color: #000;
 }
 
@@ -136,7 +135,12 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .projects-head {
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+  }
+
   .control-image {
     height: 200px;
     width: 250px;
@@ -144,7 +148,6 @@
 
   .list-techs-div {
     display: flex;
-    width: 70%;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -165,10 +168,9 @@
   }
 
   .virtical-timelinecmp {
-    width: 80%;
+    width: 100vw;
+    padding-right: 40px;
   }
 
-  .project-container {
-    padding-left: 130px;
-  }
+
 }
