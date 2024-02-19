@@ -477,7 +477,7 @@ const Home = () => {
             <div className="buttons-about">
               <button type="button" className="buttons-ab-n">
                 <a
-                  href="https://drive.google.com/file/d/12PV5u5HoJeqeXv-JF3p4l7BgkfdVqfC2/view?usp=drivesdk"
+                  href="https://drive.google.com/file/d/1BJWhrUKT3ux8MbbhhQowfwJDwAZnt-kn/view?usp=drive_link"
                   target="__blank"
                 >
                   RESUME/CV
